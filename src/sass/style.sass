@@ -1,11 +1,11 @@
 .container
     background-color: grey
     width: 1000px
-    height: 1000px
+    height: 200px
     margin: 0 auto
     display: grid
-    grid-template-columns: 1fr 2fr 1fr
-    grid-template-rows: repeat(2,1fr) //2 строки
+    grid-template-columns: 1fr 2fr 1fr // 3 колонки: как 25% 50% 25%
+    grid-template-rows: repeat(2,1fr) //2 строки, которые поделятся на 2ое
     column-gap: 30px //= grid-column-gap - расстояние между колонками
     row-gap: 30px //= grid-row-gap - расстояние между строками
     gap: 30px 100px //=grid-gap расстояние между 1) строками b 2) колонками 
@@ -17,18 +17,17 @@
     color: white
     &-1
         background-color: red
-    color: white
+        grid-row: 2 / 3
+        grid-column: 2 / 3
     &-2
         background-color: pink
-    color: white
     &-3
         background-color: blue
-    color: white
     &-4
         background-color: brown
-    color: white
     &-5
         background-color: orange
-    color: white
     &-6
         background-color: green
+        grid-row: 1 / 2
+        grid-column: 2 / 3
