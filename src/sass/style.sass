@@ -1,10 +1,11 @@
 .container
     background-color: grey
     width: 1000px
+    height: 1000px
     margin: 0 auto
     display: grid
-    grid-template-columns: 150px 150px 150px //3 колонки
-    grid-template-rows: 150px 150px 150px //3 строки
+    grid-template-columns: 1fr 2fr 1fr
+    grid-template-rows: repeat(2,1fr) //2 строки
     column-gap: 30px //= grid-column-gap - расстояние между колонками
     row-gap: 30px //= grid-row-gap - расстояние между строками
     gap: 30px 100px //=grid-gap расстояние между 1) строками b 2) колонками 
